@@ -434,6 +434,214 @@ For more information on creating lists in Android, see [Create a List with Recyc
 
 ### Practicle Exmaple on MaterialDesign:
 
+- Create new Android Studio Project
+- Adding dependency
+
+```
+implementation 'com.google.android.material:material:1.1.0'
+```
+
+- Change Theme in style.xml
+
+```xml
+<style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/materialPrimary</item>
+        <item name="colorPrimaryDark">@color/materialPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+</style>
+```
+
+- design xml file (activity_main.xml)
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MaterialDesign">
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Material Button" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Password"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#B61004"
+        app:startIconDrawable="@android:drawable/ic_lock_lock"
+        app:startIconTint="#FF5722">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Name"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
+        app:helperText="Your Name Should Not More then 20">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/snakbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Snakbar" />
+
+    <Button
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="DatePicker" />
+
+    <Button
+        android:id="@+id/rangedatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ranged DatePicker" />
+
+</LinearLayout>
+```
+- Implement Java functionality in MainActivity.java file
+
+```java
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.util.Pair;
+
+import com.google.android.material.datepicker.MaterialDatePicker;
+import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
+import com.google.android.material.snackbar.Snackbar;
+
+public class MaterialDesign extends AppCompatActivity {
+
+    Snackbar snackbar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_material_design);
+
+        /*This is Snackbar Code*/
+        findViewById(R.id.snakbar).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                snackbar = Snackbar.make(view, "This Is Snackbar", Snackbar.LENGTH_LONG);
+                snackbar.setAction("Retry", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(MaterialDesign.this, "Retry", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                snackbar.setBackgroundTint(getResources().getColor(R.color.colorPrimaryDark));
+                snackbar.setActionTextColor(getResources().getColor(android.R.color.white));
+                snackbar.show();
+            }
+        });
+
+        /*This is DatePicker*/
+
+        findViewById(R.id.datePicker).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+
+                MaterialDatePicker.Builder builderdate = MaterialDatePicker.Builder.datePicker();
+
+                final MaterialDatePicker materialDatePicker = builderdate.build();
+                materialDatePicker.show(getSupportFragmentManager(), "");
+
+                materialDatePicker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener() {
+                    @Override
+                    public void onPositiveButtonClick(Object selection) {
+                        snackbar = Snackbar.make(view, "" + materialDatePicker.getHeaderText(), Snackbar.LENGTH_LONG);
+                        snackbar.show();
+                    }
+                });
+            }
+        });
+
+        /*This is ranged DatePicker*/
+
+        findViewById(R.id.rangedatePicker).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+
+                MaterialDatePicker.Builder<Pair<Long, Long>> rangeDateBuilder = MaterialDatePicker.Builder.dateRangePicker();
+                final MaterialDatePicker materialDatePicker = rangeDateBuilder.build();
+                materialDatePicker.show(getSupportFragmentManager(), "");
+                materialDatePicker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener() {
+                    @Override
+                    public void onPositiveButtonClick(Object selection) {
+                        snackbar = Snackbar.make(view, "" + materialDatePicker.getHeaderText(), Snackbar.LENGTH_LONG);
+                        snackbar.show();
+                    }
+                });
+
+            }
+        });
+
+    }
+}
+```
+    
+- Output:
+
+
 
 
 
