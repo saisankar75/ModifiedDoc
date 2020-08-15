@@ -353,7 +353,37 @@ If both types of text fields are used in a single UI, they should be used consis
 
 ![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/textfileds_do's_not_do's.PNG)
 
-for more info[CLICKHERE](https://material.io/components/text-fields#specs)
+for more info [CLICKHERE](https://material.io/components/text-fields#specs)
+
+### Date pickers
+Date pickers let users select a date, or a range of dates.
+
+#### Usage
+Mobile calendar pickers can be used to select dates in the near future or past, when it’s useful to see them in a calendar month format. They are displayed in a dialog.
+
+Common use cases include:
+
+- Making a restaurant reservation
+- Scheduling a meeting
+
+They aren’t ideal for selecting dates in the distant past or future that require more navigation, such as entering a birth date or expiration date.
+
+Mobile calendar pickers allow selection of a single date and year.
+
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/materialdatepicker.PNG)
+
+### Mobile date range pickers
+
+#### Usage
+
+Mobile date range pickers allow selection of a range of dates. They cover the entire screen.
+
+Common use cases include:
+
+- Booking a flight
+- Reserving a hotel
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/materialrangedatepicker.PNG)
+
 
 ### Tabs
 
