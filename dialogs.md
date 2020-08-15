@@ -1,4 +1,4 @@
-## Dialogs and pickers
+## Dialogs and Pickers
 
 A dialog is a window that appears on top of the display or fills the display, interrupting the flow of _Activity_. Dialogs inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks.
 
