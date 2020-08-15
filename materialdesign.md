@@ -326,6 +326,35 @@ For more information, see [Building and Displaying a Pop-Up Message](https://dev
 
 **Tip**: A Toast is similar to a Snackbar, except that a Toast is usually used for a system message, and a Toast can't be swiped off the screen.
 
+### Text fields
+Text fields let users enter and edit text.
+Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.
+#### Types
+Text fields come in two types:
+- Filled text fields
+- Outlined text fields
+Both types of text fields use a container to provide a clear affordance for interaction, making the fields discoverable in layouts.
+
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/textfileds.PNG)
+
+#### Choosing the right text field
+Both types of text fields provide the same functionality, so the type of text field you use can depend on style alone.
+
+Choose the type that:
+- Works best with your app’s visual style
+- Best accommodates the goals of your UI
+- Is most distinct from other components (like buttons) and surrounding content
+
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/textfiledexample.PNG)
+
+Both types of text fields in one UI
+
+If both types of text fields are used in a single UI, they should be used consistently within different sections, and not intermixed within the same region. For example, you could use outlined text fields in one section and filled text fields in another.
+
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/textfileds_do's_not_do's.PNG)
+
+for more info[CLICKHERE](https://material.io/components/text-fields#specs)
+
 ### Tabs
 
 Use tabs to organize content at a high level. For example, the user might use tabs to switch between View elements, data sets, or functional aspects of an app. Present tabs as a single row above their associated content. Make tab labels short and informative. For example, in the figure below, the app shows three tabs (marked by #1), with the **All** tab selected.
