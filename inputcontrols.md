@@ -108,7 +108,7 @@ Use a set of checkboxes when you want the user to select any number of choices, 
 
 Users expect checkboxes to appear in a vertical list, like a to-do list, or side-by-side if the labels are short.
 
-[Click For the Image](https://github.com/saisankar12/document/blob/master/saisankar_concept_images/checkboxes.png)
+![](https://github.com/saisankar12/document/blob/master/saisankar_concept_images/checkboxes.png?raw=true)
 
 Each checkbox is a separate [CheckBox](https://developer.android.com/reference/android/widget/CheckBox.html) element in your XML layout. To create multiple checkboxes in a vertical orientation, use a vertical LinearLayout:
 
