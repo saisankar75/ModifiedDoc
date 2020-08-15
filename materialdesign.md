@@ -431,3 +431,12 @@ implementation 'androidx.recyclerview:recyclerview:1.1.0'
 ```
 
 For more information on creating lists in Android, see [Create a List with RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview).
+
+### Practicle Exmaple on MaterialDesign:
+
+
+
+
+
+
+
