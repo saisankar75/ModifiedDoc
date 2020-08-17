@@ -366,114 +366,114 @@ For more information about using spinners, see [Spinners](https://developer.andr
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="10dp"
     tools:context=".UserInoutControls">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher" />
-
-    <EditText
-        android:id="@+id/name"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your name"
-        android:layout_marginTop="10dp"
-        android:inputType="textCapWords" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your emailid"
-        android:inputType="textEmailAddress"
-        android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
 
-    <EditText
-        android:id="@+id/mobile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your mobileno"
-        android:inputType="number"
-        android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your name"
+            android:inputType="textCapWords" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your password"
-        android:inputType="textPassword"
-        android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your emailid"
+            android:inputType="textEmailAddress" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gender"
-        android:layout_marginTop="10dp"
-        android:textSize="20sp" />
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your mobileno"
+            android:inputType="number" />
 
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword" />
 
-        <RadioButton
-            android:id="@+id/malerb"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male" />
+            android:layout_marginTop="10dp"
+            android:text="Gender"
+            android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/femalerb"
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/malerb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/femalerb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female" />
-    </RadioGroup>
+            android:layout_marginTop="10dp"
+            android:text="Technical Skills"
+            android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Technical Skills"
-        android:layout_marginTop="10dp"
-        android:textSize="20sp" />
+        <CheckBox
+            android:id="@+id/java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Java" />
 
-    <CheckBox
-        android:id="@+id/java"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Java"
-        android:layout_marginTop="10dp"/>
+        <CheckBox
+            android:id="@+id/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Android" />
 
-    <CheckBox
-        android:id="@+id/android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Android"
-        android:layout_marginTop="10dp"/>
+        <Spinner
+            android:id="@+id/branchsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/branches" />
 
-    <Spinner
-        android:id="@+id/branchsp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/branches" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="displyData"
-        android:text="Display" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="displyData"
+            android:text="Display" />
 
         <TextView
             android:id="@+id/result"
@@ -481,8 +481,9 @@ For more information about using spinners, see [Spinners](https://developer.andr
             android:layout_height="wrap_content"
             android:text="ResultData"
             android:textSize="30sp" />
-    </ScrollView>
-</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
 ```
 
 ### string.xml
@@ -561,7 +562,6 @@ public class UserInoutControls extends AppCompatActivity {
         }
 
         String branch = sp_branch.getSelectedItem().toString();
-
 
         tv_data.setText(name + "\n" + email + "\n" + phone + "\n" + pass + "\n" +
                 gender + "\n" + builder.toString() + "\n" + branch);
