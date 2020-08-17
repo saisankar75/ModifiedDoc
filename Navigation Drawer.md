@@ -188,7 +188,7 @@ The following is the code for the content_main.xml file:
                     android:layout_height="wrap_content"
                     android:fontFamily="serif"
                     android:gravity="center"
-                    android:text="NAVIGATION 🥰"
+                    android:text="NAVIGATION"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
 
@@ -234,7 +234,7 @@ The following XML code snippet shows how to define a menu group:
 
     <item
         android:id="@+id/home"
-        android:title=" 🥰 Home" />
+        android:title="Home" />
 
     <item
         android:id="@+id/gallery"
