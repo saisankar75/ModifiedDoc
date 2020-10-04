@@ -4,9 +4,8 @@
 A menu is a set of options. The user can select from a menu to perform a function, for example searching for information, saving information, editing information, or navigating to a screen. The figure below shows the types of menus that the Android system offers. 
 
 <br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/types_menus.png?raw=true">
-</p>
+
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/types_menus.png)
 
 1. **App bar with Options menu:** Appears in the app bar and provides the primary options that affect use of the app itself.
     - Examples of menu options: 
@@ -38,10 +37,8 @@ For example, your options menu might let the user navigate to another activity t
 The options menu appears in the right corner of the app bar. The app bar is split into four functional areas that apply to most apps, as shown in the figure below.
 
 <br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/option%20_menu.png?raw=true">
-</p>
-<br>
+
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/option%20_menu.png)
 
 In the figure above:
 
@@ -60,10 +57,8 @@ If you start an app project using the Basic Activity template, the template adds
 If you are not using the Basic Activity template, use the resource-inflate design pattern, which makes it easy to create an options menu. Follow these steps (refer to the figure below):
 
 <br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/dg_options_menu_design_pattern.png?raw=true">
-</p>
-<br>
+
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/dg_options_menu_design_pattern.png)
 
    1. **XML menu resource.** Create an XML menu resource file for the menu items, and assign appearance and position attributes as described in the next section.
    2. **Inflating the menu.** Override the [onCreateOptionsMenu()](https://developer.android.com/reference/android/app/Activity.html#onCreateOptionsMenu(android.view.Menu)) method in your **_Activity_** to inflate the menu.
