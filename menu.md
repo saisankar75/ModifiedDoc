@@ -69,11 +69,12 @@ If you are not using the Basic Activity template, use the resource-inflate desig
 ## Steps To Create App bar with options menu
 
    1. Create AndroidResourse directory
+   
         * Select the **res** folder in the **Project > Android** pane and choose **File > New > Android resource directory.**
         <br>
-        <p align="center">
-            <img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/dircectory_creation.PNG?raw=true">
-        </p>
+        
+        ![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/dircectory_creation.PNG)
+        
         <br>
         
         * Choose **menu** in the **Resource** type drop-down menu, and click **OK.**
