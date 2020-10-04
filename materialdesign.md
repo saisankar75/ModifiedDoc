@@ -14,11 +14,7 @@ Material Design involves deliberate color choices, edge-to-edge imagery, large-s
 
 Emphasize user actions in your app so that the user knows right away what to do, and how to do it. For example, highlight things that users can interact with, such as buttons, EditText fields, and switches.
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/bold_fab.png?raw=true">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/bold_fab.png)
 
 In the above figure, #1 is a [FloatingActionButton](https://developer.android.com/reference/android/support/design/widget/FloatingActionButton.html) with a pink accent color.
 
@@ -62,11 +58,7 @@ In _styles.xml_ in the _values_ folder, the three defined colors are applied to 
 
 In the screenshot below, the background of the action bar uses colorPrimary (indigo), the status bar uses colorPrimaryDark (a darker shade of indigo), and the switch in the "on" position (#1 in the figure below) uses colorAccent (a shade of pink).
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/bold_switch.png?raw=true">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/bold_switch.png)
 
 In summary, here's how to use the Material Design color palette in your Android app:
 
@@ -135,17 +127,12 @@ Alternatively, you can calculate the color of text by doing the following:
 
 In this case, if the surface behind the text changes color, you must update the hex color as well.
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/opacity_do.PNG?raw=true">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/opacity_do.PNG)
+
 Use a transparent version of black on a colored surface to preserve legibility.
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/opacity_don't%20do.PNG?raw=true">
-</p>
-<br>
+
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/opacity_don't%20do.PNG)
+
 Avoid using opaque gray text that isn’t legible on colored surfaces.
 
 ### Typography
@@ -160,11 +147,7 @@ The Android platform provides predefined font styles and sizes that you can use 
 
 Be careful not to use too many different type sizes and styles together in your layout.
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/typography_styles.png?raw=true" width="500dp">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/typography_styles.png)
 
 To use one of these predefined styles in a View, set the android:textAppearance attribute. This attribute defines the default appearance of the text: its color, typeface, size, and style. Use the backward-compatible [TextAppearance.AppCompat](https://developer.android.com/reference/android/support/v7/appcompat/R.style.html#TextAppearance_AppCompat) style.
 
@@ -200,11 +183,7 @@ You can set your app to download fonts by using the layout editor in Android Stu
 
 A font provider is an application that retrieves fonts and caches them locally so other apps can request and share fonts. Figure 1 illustrates the process.
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/downloadable-fonts-process.png?raw=true" width="400dp">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/downloadable-fonts-process.png)
 
 ### Layout
 
@@ -216,11 +195,7 @@ Components in the Material Design templates that are meant for mobile, tablet, a
 
 The 8dp square grid guides the placement of elements in your layout. Every square in the grid is 8dp x 8dp, so the height and width of every element in the layout is a multiple of 8dp.
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/8dp_grid.png?raw=true">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/8dp_grid.png)
 
 In the above figure:
 
@@ -234,11 +209,7 @@ Keylines
 
 Keylines are outlines in a layout grid that determine the placement of text and icons. For example, keylines mark the edges of the margins in a layout.
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/keylines.png?raw=true">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/keylines.png)
 
 In the above figure:
 
@@ -272,11 +243,7 @@ To make sure you have the most recent version number for the Design Support Libr
 
 Use a floating action button (FAB) for actions you want to encourage users to take. A FAB is a circled icon that floats "above" the UI. On focus it changes color slightly, and it appears to lift up when selected. When tapped, it can contain related actions.
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/fab_example.png?raw=true">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/fab_example.png)
 
 In this figure:
 
@@ -305,11 +272,7 @@ To learn about all the attributes you can set for a FAB including clickable, rip
 
 A snackbar provides brief feedback about an operation through a message in a horizontal bar on the screen. It contains a single line of text directly related to the operation performed. A snackbar (shown as #1 in the figure below) can contain a text action, but no icons.
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/snackbar_example.png?raw=true">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/snackbar_example.png)
 
 Snackbars automatically disappear after a timeout or after a user interaction elsewhere on the screen. You can associate a snackbar with any kind of view (any object derived from the View class). However, if you associate the snackbar with a [CoordinatorLayout](https://developer.android.com/reference/androidx/coordinatorlayout/widget/CoordinatorLayout), the snackbar gains additional features:
 
@@ -382,18 +345,14 @@ Common use cases include:
 
 - Booking a flight
 - Reserving a hotel
-![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/materialrangedatepicker.PNG)
 
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/materialrangedatepicker.PNG)
 
 ### Tabs
 
 Use tabs to organize content at a high level. For example, the user might use tabs to switch between View elements, data sets, or functional aspects of an app. Present tabs as a single row above their associated content. Make tab labels short and informative. For example, in the figure below, the app shows three tabs (marked by #1), with the **All** tab selected.
 
-<br>
-<p align="center">
-<img  src="https://github.com/saisankar12/document/blob/master/saisankar_concept_images/tabs_example.png?raw=true">
-</p>
-<br>
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/tabs_example.png)
 
 You can you use tabs with swipe views in which users navigate between tabs with a horizontal finger gesture (horizontal paging). If your tabs use swipe views, don't pair the tabs with content that also supports swiping. For an example, see the lesson in this course on providing user navigation.
 
@@ -405,7 +364,7 @@ A card is a sheet of material that serves as an entry point to more detailed inf
 
 A card collection is a layout of cards on the same plane. The figure below shows one card in a card collection (marked by #1).
 
-![](https://github.com/saisankar12/document/blob/master/saisankar_concept_images/card_example.png?raw=true)
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/card_example.png)
 
 [CardView](https://developer.android.com/guide/topics/ui/layout/cardview) is included as part of the v7 support library. To use the library, include the following dependency in your build.gradle (Module: app) file:
 
@@ -417,7 +376,7 @@ implementation 'androidx.cardview:cardview:1.0.0'
 
 A list is a single continuous column of rows of equal width. Each row functions as a container for a tile. Tiles hold content, and can vary in height within a list.
 
-![](https://github.com/saisankar12/document/blob/master/saisankar_concept_images/list_example.png?raw=true)
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/list_example.png)
 
 In the figure above:
 
