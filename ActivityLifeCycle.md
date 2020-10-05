@@ -1,7 +1,5 @@
 # Activity Lifecycle
 
-* See it in Activity Lifecycle [at Android Developers](https://developer.android.com/guide/components/activities/activity-lifecycle#:~:text=To%20navigate%20transitions%20between%20stages,activity%20enters%20a%20new%20state.)
-
 ## Introduction
 * In this you learn about the activity lifecycle, the callback events you can implement to perform tasks in each stage of the lifecycle, and how to handle Activity instance states throughout the activity lifecycle.
 
@@ -185,6 +183,3 @@ public class MainActivity extends AppCompatActivity {
 
 
 ```
-
-
-```Java
