@@ -19,7 +19,8 @@ The activity lifecycle is the set of states an activity can be in during its ent
 **Activity states and lifecycle callback methods**
 * When an Activity transitions into and out of the different lifecycle states as it runs, the Android system calls several lifecycle callback methods at each stage. All of the callback methods are hooks that you can override in each of your Activity classes to define how that Activity behaves when the user leaves and re-enters the Activity. Keep in mind that the lifecycle states (and callbacks) are per Activity, not per app, and you may implement different behavior at different points in the lifecycle of each Activity.
 
-<img src="https://github.com/AP-Skill-Development-Corporation/Android-Students-Training-II-Batch-1/blob/master/activity_lifecycle.png?raw=true">
+![](https://raw.githubusercontent.com/AP-Skill-Development-Corporation/AAD-STP-BATCH-3/master/activity_lifecycle.png)
+
 
 **This figure shows each of the Activity states and the callback methods that occur as the Activity transitions between different states:**
 
@@ -114,8 +115,6 @@ onDestroy()
         app:layout_constraintVertical_bias="0.483" />
         
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 ```
 
