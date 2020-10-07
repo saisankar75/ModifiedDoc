@@ -227,8 +227,6 @@ class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-
-
 **Java Code**
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -266,7 +264,5 @@ public class MainActivity extends AppCompatActivity {
 ```
 **OutPut:**
 
+![](https://raw.githubusercontent.com/mastan511/MastanImages/master/recyclerview.png)
 
-
-
-<img src="https://raw.githubusercontent.com/mastan511/MastanImages/master/recyclerview.png" width=200 height=400>
