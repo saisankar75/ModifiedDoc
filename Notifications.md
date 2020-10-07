@@ -30,10 +30,11 @@ Notification channels are called Categories in the user-visible Settings app. Fo
 
 When you create a notification channel in your code, you set behavior for that channel, and the behavior is applied to all of the notifications in the channel. For example, your app might set the notifications in a channel to play a sound, blink a light, or vibrate. Whatever behavior you set for a notification channel, the user can change it, and they can turn off notifications from your app altogether.
 
-         Note: If your app targets Android 8.0 (API level 26) or higher, you must implement one or more notification channels. 
-         If your targetSdkVersion is set to 25 or lower,
-         when your app runs on Android 8.0 (API level 26) or higher, 
-         it behaves the same as it would on devices running Android 7.1 (API level 25) or lower.
+**Note**: 
+- If your app targets Android 8.0 (API level 26) or higher, you must implement one or more notification channels. 
+- If your targetSdkVersion is set to 25 or lower,
+- when your app runs on Android 8.0 (API level 26) or higher, 
+- it behaves the same as it would on devices running Android 7.1 (API level 25) or lower.
 
 ### Creating a notification channel
 To create a notification channel instance, use the NotificationChannel constructor. Specify an ID that's unique within your package, a user-visible channel name, and an importance for the channel:
@@ -45,9 +46,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 }
 ```
 
-          Important: Before you use the notification-channel APIs, check the SDK version. 
-          Notification channels are only available in Android 8.0 (API level 26) and higher. 
-          Notification channels are not available in the Android Support Library.
+**Important**: 
+- Before you use the notification-channel APIs, check the SDK version. 
+- Notification channels are only available in Android 8.0 (API level 26) and higher. 
+- Notification channels are not available in the Android Support Library.
           
 ### Set the importance level
 The NotificationChannel constructor, which is available in Android 8.0 (API level 26) and higher, requires an importance level. The channel's importance determines the instrusiveness of the notifications posted in that channel. For example, notifications with a higher importance might make sound and show up in more places than notifications with a lower importance. There are five importance levels, ranging from IMPORTANCE_NONE(0) to IMPORTANCE_HIGH(4).
@@ -58,13 +60,7 @@ mBuilder.setPriority(NotificationCompat.PRIORITY_HIGH);
 ```
 On devices running Android 8.0 and higher, all notifications, regardless of priority and importance level, appear in the notification drawer and as app icon badges. After a notification is created and delivered, the user can change the notification channel's importance level in the Android Settings app. The following table shows how the user-visible importance level maps to the notification-channel importance level and the priority constants.
 
-
-User-visible importance level | Importance (Android 8.0 and higher) | Priority (Android 7.1 and lower)
------------------------------ | ----------------------------------- | ---------------------------------     
-Urgent Notifications make a sound and appear as heads-up notifications. | IMPORTANCE_HIGH | PRIORITY_HIGH or PRIORITY_MAX
-High Notifications make a sound. | IMPORTANCE_DEFAULT | PRIORITY_DEFAULT
-Medium Notifications make no sound. | IMPORTANCE_LOW | PRIORITY_LOW
-Low Notifications make no sound and do not appear in the status bar. | IMPORTANCE_MIN | PRIORITY_M
+![](https://raw.githubusercontent.com/saisankar12/document/master/saisankar_concept_images/prority.PNG)
 
 ### Configure the initial settings
 Configure the notification channel object with initial settings such as an alert sound, a notification light color, and an optional user-visible description.
@@ -206,7 +202,6 @@ Pass these two values in the notify() method:
 - A notification ID, which is used to update or cancel the notification.
 - The NotificationCompat object that you created using the NotificationCompat.Builder object.
 
-
 The following example creates a NotificationManager instance, then builds and delivers a notification:
 
 ```java
@@ -228,19 +223,17 @@ NotificationCompat.Builder notifyBuilder =
 //Delivers the notification
 mNotifyManager.notify(NOTIFICATION_ID, notifyBuilder.build());
  ```
- 
- 
+  
 ### Updating and reusing notifications
 Sometimes you need to issue a notification multiple times for the same type of event. In this situation, you can update a previous notification by changing some of the notification's values, adding to the notification, or both.
-
 
 To reuse an existing notification:
 
 - Update a NotificationCompat.Builder object and build a Notification object from it, as when you first created and built the notification.
 - Deliver the notification with the same ID you used previously.
 
-            Important: If the previous notification is still visible, the system updates it from the contents of the Notification object. 
-            If the previous notification has been dismissed, a new notification is created and displayed.
+Important: If the previous notification is still visible, the system updates it from the contents of the Notification object. If the previous notification has been dismissed, a new notification is created and displayed.
+
 ### Clearing notifications
 Notifications remain visible until one of the following happens:
 
@@ -254,7 +247,6 @@ Because the user can't cancel ongoing notifications, your app must cancel them b
 ### Codelab For Notification
 1. In Android Studio, create a new project called "Notify Me!" Accept the default options, and use the Empty Activity template.
 2. In your activity_main.xml layout file, replace the default TextView with a button that has the following attributes:
-
 
 ```xml
 
@@ -381,7 +373,6 @@ Notifications are created using the NotificationCompat.Builder class, which allo
 - Title (optional), which you set using setContentTitle().
 - Detail text (optional), which you set using setContentText().
 
-
 To create the required notification icon:
 
 1. In Android Studio, go to File > New > Image Asset.
@@ -427,12 +418,3 @@ mNotifyManager.notify(NOTIFICATION_ID, notifyBuilder.build());
 **OutPut**
 
 ![](https://raw.githubusercontent.com/mastan511/MastanImages/master/notification.gif)
-
-
-
-
-
-
- 
- 
- 
