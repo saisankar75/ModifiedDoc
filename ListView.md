@@ -19,7 +19,7 @@ The **onListItemClick()** method is used to process the clicks on android ListVi
 
 ### Android ListView Example Project Structure
 
-![picture alt](https://github.com/chaitanyak963/Document/raw/master/project.png)
+![](https://raw.githubusercontent.com/chaitanyak963/Document/master/project.png)
 
 ### strings.xml
 ```xml
@@ -145,7 +145,7 @@ public class SecondActivity extends Activity {
 }
 ```
 
-![picture alt](https://raw.githubusercontent.com/chaitanyak963/Document/master/output.gif)
+![](https://raw.githubusercontent.com/chaitanyak963/Document/master/output.gif)
 
 ## Custom ListView Android Tutorial
 
@@ -158,7 +158,7 @@ public class SecondActivity extends Activity {
 ### Adding Images
 * On your project paste, all the images inside **res->drawable** that you downloaded.
 
-![picture alt](https://raw.githubusercontent.com/chaitanyak963/Document/master/drawable.webp)
+![](https://raw.githubusercontent.com/chaitanyak963/Document/master/drawable.webp)
 
 ### Adding ListView in MainActivity
 * Now come inside activity_main.xml and add a ListView here.
@@ -181,12 +181,13 @@ tools:context=".MainActivity">
 ```
 * So now we have a ListView inside our MainActivity.
 
-![picture alt](https://raw.githubusercontent.com/chaitanyak963/Document/master/list.webp)
+![](https://raw.githubusercontent.com/chaitanyak963/Document/master/list.webp)
 
 ### Custom List Layout
 * So inside res->layout create a new Layout Resource File named my_custom_list.xml. (You can give any name to the file).
 * Inside this file, we will design the Layout for our List.
 * we will write the following code inside my_custom_list.xml.
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
