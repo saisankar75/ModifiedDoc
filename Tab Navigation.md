@@ -259,21 +259,7 @@ tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 ```
 3. Run the app. Tap each tab to see each "page" (screen). You should also be able to swipe left and right to visit the different "pages".
 
-OutPut:
+### OutPut:
 
 ![](https://www.codingdemos.com/wp-content/uploads/2018/02/Change-Android-Tablayout-background-color-169x300.gif)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
